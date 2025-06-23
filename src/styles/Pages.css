@@ -1,0 +1,506 @@
+* {
+  margin: 20;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #36a2e0;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #ffd166;
+}
+
+.apply-btn {
+  background-color: #06d6a0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.902);
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: white;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.banner-image {
+  width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.4);
+}
+
+.hero-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 4px #000;
+}
+
+.hero-text h1 {
+  color: white;
+  font-size: 6rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+
+.apply-btn {
+  background-color: #8fd240;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid #00458a;
+  transition: background 0.3s ease;
+  font-size: 3rem;
+}
+
+.apply-btn:hover {
+  background-color: #118ab2;
+  
+}
+
+content {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: blue;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.content h2, .content h3 {
+  color: #1a237e;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 10px;
+  color: #faf7f7;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  margin-top: 10px;
+}
+
+.why-choose,
+.campus-life {
+  padding: 30px 20px;
+  background: #ffffff;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.campus-content {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.campus-content img {
+  width: 45%;
+  border-radius: 8px;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full viewport height */
+}
+
+.explore-text {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Centering the button */
+.explore-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px; /* optional spacing */
+}
+
+/* Button styling */
+.explore-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #45a049;
+}
+
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .campus-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* About Section Layout */
+.about-section {
+  align-self: center;
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+.card {
+  max-width: 900px;
+  margin: 3rem auto;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+.card h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #004080;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+.card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+/* List Styling */
+.card ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card h1 {
+    font-size: 1.6rem;
+  }
+
+  .card h2 {
+    font-size: 1.25rem;
+  }
+
+  .card p,
+  .card ul li {
+    font-size: 0.95rem;
+  }
+}
+
+
+.academic-section {
+  align-items: center;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.academic-section h2, .academic-section h3 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.academic-section p, .academic-section li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.academic-section ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.campus-video {
+  width: 100%;
+  height: 50;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #003366;
+  color: #fff;
+}
+
+.inquire-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eef7fa; /* Light background */
+}
+
+.inquire-box {
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.inquire-btn {
+  margin-top: 1.5rem;
+  padding: 12px 25px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: backgroubd-color 0.3s ease;
+}
+
+.inquire-btn:hover {
+  background-color: #45a049;
+}
+
+.contact-page {
+  background: linear-gradient(to bottom right, #74c4cc, #a6e1f5);
+    padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.contact-container {
+  background-color: white;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.contact-container h1 {
+  text-align: center;
+  color: #1976d2;
+  margin-bottom: 1rem;
+}
+
+.contact-container h2 {
+  margin-top: 1.5rem;
+  color: #2c3e50;
+}
+
+.contact-container a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+}
+
+.admissions-header-container {
+  background-color: #a8dadc; /* Light blue background */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content to the top */
+  min-height: 100vh; /* Ensure it takes full viewport height for centering */
+  box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.admissions-card {
+  background-color: #ffffff; /* White card background */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Max width for the content card */
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto; /* Enable scrolling if content exceeds height */
+  max-height: 90vh; /* Limit height to prevent overflow issues */
+}
+
+h1 {
+  color: #1d3557; /* Dark blue for heading */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #457b9d; /* Medium blue for subheadings */
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.eligibility-table {
+  color: #000;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.eligibility-table th,
+.eligibility-table td {
+  border: 1px solid black;
+  padding: 12px;
+  text-align: left;
+}
+
+.eligibility-table th {
+  color: #000;
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  color: #1a237e;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+ol {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  padding: 20px 30px;
+  background-color: #ffffff;
+  border-left: 5px solid #1a237e;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  list-style-position: inside;
+}
+
+ol li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+ol li strong {
+  display: block;
+  color: #0d47a1;
+  margin-bottom: 5px;
+}
+
+.note {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #e3f2fd;
+  border-left: 5px solid #2196f3;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.note a {
+  color: #1565c0;
+  text-decoration: underline;
+}
+
+.note a:hover {
+  color: #0d47a1;
+  text-decoration: none;
+}
