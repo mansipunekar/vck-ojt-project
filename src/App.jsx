@@ -4,7 +4,9 @@ import HomePage from './pages/HomePage';
 import './styles/Pages.css';
 import Courses from './pages/Courses';
 import ContactPages from './pages/ContactPages';
-import Apply from './pages/Apply';
+import ChatbotComponent from './components/Chatbot/ChatbotComponent';
+import './App.css';
+import AdmissionPages from './pages/AdmissionPages';
 import Footer from './components/Footer/Footer';
 
 
@@ -12,22 +14,21 @@ import Footer from './components/Footer/Footer';
 
 const App = () => {
     return(
-      <div>
-        <h1></h1>
-        <Router>
+      <div >
+      <Router>
           <Routes>
           <Route path="/" element={<HomePage/>}/>
           
 
             <Route path="/home" element={<HomePage/>}/>
             <Route path="/about" element={<AboutPages/>}/>
-            <Route path="/apply" element={<Apply/>}/>
+            <Route path="/admission" element={<AdmissionPages/>}/>
             <Route path="/courses" element={<Courses/>}/>
             <Route path="/contact" element={<ContactPages/>}/>
-             
-             </Routes>
-             <Footer/>
-        </Router>
+            </Routes>
+            <ChatbotComponent/>
+           </Router>
+           <Footer/>
       </div>
 
     )

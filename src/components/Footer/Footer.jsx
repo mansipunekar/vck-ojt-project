@@ -1,12 +1,10 @@
 import'./Footer.css';
 const Footer = () => {
     return(
-      <div className="app-container">
-      {/* Other page content would go here */}
-      <footer className="footer-copyright">
-        <p>&copy; 2025 Vivekanand College. All rights reserved.</p>
-      </footer>
-    </div>
-    );
-};
+      <footer className="footer">
+      <p>&copy; {new Date().getFullYear()} Vivekanand College. All rights reserved.</p>
+    </footer>
+            
+    )
+}
 export default Footer;
