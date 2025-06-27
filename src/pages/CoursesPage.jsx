@@ -4,6 +4,7 @@ const Courses = () => {
     return(
       <>
         <Header/>
+        <div className="main-container">
         <div className="page-container" style={{overflow:"auto"}}>
               <h1>Our Academic Programs</h1>
               <p>
@@ -102,6 +103,7 @@ const Courses = () => {
                 <p>Have questions about a specific course?</p>
                 <Link to="/admission" className="btn">Inquire About Courses</Link>
               </div>
+            </div>
             </div>
       </>
     

@@ -2,7 +2,7 @@ import {Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import AboutPages from './pages/AboutPages';
 import HomePage from './pages/HomePage';
 import './styles/Pages.css';
-import Courses from './pages/Courses';
+import CoursesPage from './pages/CoursesPage';
 import ContactPages from './pages/ContactPages';
 import ChatbotComponent from './components/Chatbot/ChatbotComponent';
 import './App.css';
@@ -39,7 +39,7 @@ const App = () => {
             <Route path="/home" element={<HomePage/>}/>
             <Route path="/about" element={<AboutPages/>}/>
             <Route path="/admission" element={<AdmissionPages/>}/>
-            <Route path="/courses" element={<Courses/>}/>
+            <Route path="/courses" element={<CoursesPage/>}/>
             <Route path="/contact" element={<ContactPages/>}/>
             </Routes>
             <ChatbotComponent/>

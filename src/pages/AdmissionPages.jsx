@@ -4,6 +4,7 @@ const AdmissionPages = () => {
   return (
     <>
     <Header/>
+    <div className="main-container">
      <div className="page-container" style={{ overflow: "auto" }}>
            <h1>Admissions at Vivekanand College</h1>
            <p>
@@ -76,6 +77,7 @@ const AdmissionPages = () => {
              <Link to="/courses">Courses page</Link> or{" "}
              <Link to="/contact">Contact us</Link> directly.
           </p>
+           </div>
            </div>
     </>
   )

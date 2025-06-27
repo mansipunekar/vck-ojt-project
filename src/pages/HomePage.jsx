@@ -4,6 +4,7 @@ const HomePage = () => {
     return(
       <>
       <Header/>
+      <div className="main-container">
       <div className="page-container" style={{overflow:"auto"}}>
         <div className="hero-section">
                 <img
@@ -70,6 +71,7 @@ const HomePage = () => {
                   Explore Courses
                 </Link>{" "}
               </div>
+            </div>
             </div>
             </>
       
